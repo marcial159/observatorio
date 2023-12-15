@@ -1,0 +1,421 @@
+.bg-muted
+{
+    background: #f1f1f1 !important;
+}
+
+.btn-secondary-flask
+{
+    background: #2C7289 !important;
+}
+
+.dropdown-menu
+{
+    /* background: #f7f7f7 !important; */
+    border: solid rgb(223, 223, 223) 1px;
+}
+
+.w-25
+{
+    width: 25px !important;
+}
+
+.vh-100
+{
+    height: 100vh !important;
+}
+
+.sidenav
+{
+    scrollbar-width: thin;
+    scrollbar-color: #393e50;
+}
+
+.sidenav:hover
+{
+    scrollbar-width: thin;
+    scrollbar-color: #0a268b;
+}
+
+.sidenav::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+.sidenav::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+
+.sidenav::-webkit-scrollbar-thumb
+{
+    background-color: transparent;
+    border-radius: 20px;
+    /* border: 3px solid rgb(236, 236, 236); */
+}
+
+.sidenav:hover::-webkit-scrollbar-thumb
+{
+    background-color: #b1b1b1;
+    border-radius: 20px;
+}
+
+.error
+{
+    font-size: 10px;
+    color: #ff8800;
+    font-weight: 400;
+    margin-bottom: 0px;
+    min-height: 16.25px;
+    margin-top: 3px;
+}
+
+.ml-auto
+{
+    margin-left: auto;
+}
+
+.scroll-permission
+{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.split
+{
+    border: solid white 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.div-loader
+{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 600;
+    border-radius: 5px !important;
+    background: #fafafad7;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 0;
+}
+
+.dark-version .div-loader
+{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 600;
+    border-radius: 5px;
+    background: #343840aa;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 0;
+}
+
+.loader
+{
+    width: 60px;
+}
+
+.loader-wheel
+{
+    animation: spin 1s infinite linear;
+    border: 2px solid transparent;
+    border-left: 4px solid green;
+    border-radius: 50%;
+    height: 50px;
+    margin-bottom: 10px;
+    width: 50px;
+    position: relative;
+    top:35%;
+}
+
+@keyframes spin
+{
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+.input-file
+{
+    width: 100%;
+    border-bottom: solid 1.7px;
+    transition: .7s;
+    font-size: 12px;
+}
+
+.input-file:focus
+{
+    border-bottom: solid 1.7px #5AB25E;
+    transition: .7s;
+}
+
+input::file-selector-button {
+    color: #5AB25E;
+    margin-right: 10px;
+    padding: 5px;
+    font-weight: bold;
+    background: #2A3149;
+    border: thin solid grey;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.sidenav
+{
+    z-index: 1 !important;
+}
+
+.form-control:focus,
+.form-select:focus
+{
+    border: #cfcfcf solid 1px;
+}
+
+/* Multiselect */
+
+.multiselect
+{
+    font-size: 12px !important;
+    height: 33.8px !important;
+    min-height: auto !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.multiselect-wrapper
+{
+    border: #cbcbcb .5px solid !important;
+    border-radius: 5px;
+    min-height: 32px !important;
+}
+
+.dark-version .modal-content
+{
+    background-color: #343845 !important;
+}
+
+.dark-version .input-group-text
+{
+    background-color: #1E2229 !important;
+    border: gray 1px solid;
+}
+
+.dark-version input,
+.dark-version input:focus,
+.dark-version select,
+.dark-version select:focus,
+.dark-version textarea,
+.dark-version textarea:focus
+{
+    background: #343845;
+    color: white !important;
+    border: gray 1px solid;
+}
+
+.dark-version .page-link
+{
+    background: #1E2229;
+    border: 0px;
+    border: #1E2229 2px solid;
+}
+
+.bg-admin
+{
+    background: #eaeaea;
+}
+
+.dark-version .bg-admin
+{
+  background: #24272d;
+}
+
+.dark-version .sidenav
+{
+    background: #343845 !important;
+}
+
+.dark-version .card,
+.dark-version .swal2-popup,
+.dark-version .dropdown .dropdown-menu,
+.dark-version .kanban-board {
+  background: #313541;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.dark-version .btn-menu
+{
+  background: #1e2229;
+	box-shadow: #1E2229 0px 1px 5px;
+}
+
+.dark-version .bg-th
+{
+	background: #505966;
+}
+
+.dark-version .btn-menu i
+{
+    color: #26A178;
+}
+
+.dark-version .multiselect-wrapper
+{
+    border: #888888 .5px solid !important;
+} 
+
+.multiselect-search
+{
+    border: none !important;
+}
+
+.multiselect-fake-input
+{
+    border: none !important;
+}
+
+.multiselect-option
+{
+    font-size: 12px !important;
+}
+
+.dark-version .multiselect-option
+{
+    background-color: #3c424d;
+    color: white;
+}
+
+.multiselect-placeholder
+{
+    font-size: 12px;
+}
+
+.dark-version .multiselect-option.is-selected.is-pointed,
+.dark-version .multiselect-option.is-selected
+{
+    background: #1b8154;
+}
+
+.dark-version .multiselect-option.is-pointed,
+.dark-version .multiselect-no-results
+{
+    background: #282c33;
+    color: white;
+    font-size: 12px;
+}
+
+.dark-version .multiselect-tags-search
+{
+    background: transparent !important;
+}
+
+.dark-version .multiselect-no-options
+{
+    background-color: #282c33;
+    color: white;
+}
+
+.dark-version .multiselect-tag
+{
+    background: #1b8154;
+    font-size: 12px;
+}
+/* Fin multiselect */
+
+.table-size-1
+{
+    min-height: 275px;
+}
+
+.table-size-2
+{
+    min-height: 364.64px;
+}
+
+.table,
+tr
+{
+    border: solid 2px #E9ECEF;
+}
+
+.dark-version .table,
+.dark-version tr
+{
+    border: solid 2px #505966;
+}
+
+.page-item.active .page-link
+{
+    color: white;
+    background: #b8d9b9;
+}
+
+.icon-circle
+{
+    background: white;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.scroll-wizard
+{
+    max-height: 380px;
+    overflow-y: scroll;   
+}
+
+.dark-version #tinymce
+{
+    color: white !important;
+}
+
+.dark-version .tox-edit-area__iframe
+{
+    background: #cfcfcf !important;
+}
+
+.multiselect-tags-search
+{
+    background: white !important;
+}
+
+.dark-version .multiselect-tags-search,
+.dark-version .multiselect-tags-search:focus
+{
+    background: #3d4655;
+    border: none;
+}
+.circle-status
+{
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.progress-percentage
+{
+    height: 15px;
+    /* color :rgb(6, 9, 46) */
+}
+
+.dark-version .multiselect-single-label
+{
+    color: white;
+}
+
+.text-name
+{
+    color: black;
+}
+
+.dark-version .text-name
+{
+    color: white;
+}

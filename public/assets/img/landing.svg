@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="668.514mm" height="317.397mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 39810.35 18901.18"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#FEFEFE;stroke-width:11.91;stroke-miterlimit:22.9256}
+    .str0 {stroke:#F8F9FA;stroke-width:4.54;stroke-miterlimit:22.9256}
+    .fil6 {fill:none}
+    .fil0 {fill:#3D988A}
+    .fil1 {fill:#F8F9FA}
+    .fil3 {fill:url(#id1)}
+    .fil2 {fill:url(#id2)}
+    .fil4 {fill:url(#id3)}
+    .fil5 {fill:url(#id4)}
+   ]]>
+  </style>
+     <clipPath id="id0">
+      <path d="M37359.27 18901.18c-850.2,-210.27 -1650.67,-658.61 -2291.09,-1341.49l-4968.26 -5297.68c-1770.01,-1887.38 -1673.99,-4879.75 213.36,-6649.77 1887.36,-1770 4879.75,-1673.98 6649.74,213.4l2646.95 2822.42 61.63 10245.89 -28.85 7.24 -2283.49 0z"/>
+     </clipPath>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="25083.83" y1="1423.55" x2="40808.22" y2="18546.55">
+   <stop offset="0" style="stop-opacity:1; stop-color:#3FB882"/>
+   <stop offset="0.690196" style="stop-opacity:1; stop-color:#2B9283"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#166C85"/>
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="25083.83" y1="1423.55" x2="40808.22" y2="18546.55">
+  </linearGradient>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="25083.83" y1="1423.55" x2="40808.22" y2="18546.55">
+  </linearGradient>
+  <linearGradient id="id4" gradientUnits="userSpaceOnUse" xlink:href="#id1" x1="24874.76" y1="1214.48" x2="40599.15" y2="18337.48">
+  </linearGradient>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2002309135248">
+   <path class="fil0" d="M29617.6 18897.86c-431.2,1.45 -646.8,2.18 -646.8,2.18 -11.95,-53.11 14.33,-113.55 78.85,-181.32 67.26,-56.75 131.7,-82.19 193.31,-76.31 58.01,-5.39 121,18.11 188.95,70.49 123.79,123.31 185.68,184.96 185.68,184.96z"/>
+   <rect class="fil1 str0" transform="matrix(0.874501 -0.847942 1.24446 1.28344 31426.1 13619.9)" width="385.98" height="998.16" rx="192.99" ry="192.99"/>
+   <g>
+    <polygon class="fil2" points="39684.18,18901.18 39684.18,7774.26 31893.62,24.27 28424.25,24.27 22674.53,5804.07 28626.21,11583.64 25438.21,14983.38 29376.49,18901.18 "/>
+    <path class="fil3" d="M25083.81 1423.57l0.02 -0.02c446.91,-448.28 1179.37,-449.39 1627.62,-2.49l4556.82 4543.01c448.3,446.94 449.39,1179.34 2.47,1627.62l-0.04 0.02c-446.91,448.29 -1179.33,449.41 -1627.62,2.5l-4556.81 -4543.02c-448.25,-446.9 -449.37,-1179.33 -2.45,-1627.62z"/>
+    <path class="fil4" d="M24982.64 9732.73c448.47,-449.82 1183.41,-450.92 1633.24,-2.47l4572.3 4558.44c449.81,448.46 450.95,1183.4 2.47,1633.24 -448.44,449.81 -1183.39,450.91 -1633.21,2.45l-4572.3 -4558.44c-449.82,-448.46 -450.95,-1183.42 -2.51,-1633.23z"/>
+    <path class="fil5" d="M23682.65 14842.9c448.48,-449.83 1183.42,-450.93 1633.24,-2.47l4073.08 4060.74 -3271.39 0 -2432.42 -2425.05c-449.83,-448.46 -450.95,-1183.42 -2.51,-1633.22z"/>
+    <path class="fil1 str1" d="M28626.58 24.27l2847.74 2839.12c448.31,446.93 449.39,1179.33 2.48,1627.61l-0.04 0.02c-446.91,448.28 -1179.33,449.41 -1627.62,2.5l-4482.81 -4469.25 3260.25 0z"/>
+    <path class="fil1" d="M22586.63 3141.97l0.04 -0.06c710.9,-713.05 1875.97,-714.79 2589,-3.94l7248.33 7226.38c713.03,710.87 714.82,1875.94 3.92,2589.01l-0.04 0.04c-710.9,713.06 -1875.98,714.79 -2588.99,3.94l-7248.35 -7226.38c-713.01,-710.86 -714.81,-1875.94 -3.91,-2588.98z"/>
+    <path class="fil1" d="M20720.07 8740.84c448.47,-449.82 1183.41,-450.92 1633.24,-2.47l4572.31 4558.44c449.8,448.46 450.95,1183.4 2.47,1633.24 -448.44,449.81 -1183.4,450.91 -1633.2,2.46l-4572.3 -4558.45c-449.83,-448.46 -450.95,-1183.41 -2.51,-1633.23z"/>
+    <g style="clip-path:url(#id0)">
+     <image x="24255.8" y="3412.35" width="24062.44" height="15533.96" xlink:href="landing_Images\landing_ImgID1.png"/>
+    </g>
+   </g>
+   <rect class="fil6" width="39810.35" height="18844.26"/>
+  </g>
+ </g>
+</svg>
