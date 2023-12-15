@@ -48,7 +48,7 @@
         <div class="ma">
             <strong class="text-center db">RESETEO DE CONTRASEÑA</strong>
             <hr>
-            <p class="tj">Hola! Te saludamos de ITEC, recibimos tu petición de reseteo de contraseña, a continuación te enviamos el código a usar:</p>
+            <p class="tj">Hola! Te saludamos del Observatorio de Investigación de la UNAMBA, recibimos tu petición de reseteo de contraseña, a continuación te enviamos el código a usar:</p>
             <strong class="fs-2">{{ $token  }}</strong>
             <br>
             <small class="tj db" style="margin-top: 20px">Código válido solo para esta petición, si ud. no solicitó este reseteo de contraseña no realice ninguna acción, nos encargaremos de verificar la validez de la misma, saludamos!.</small>
