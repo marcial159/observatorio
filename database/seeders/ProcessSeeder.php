@@ -10,7 +10,7 @@ class ProcessSeeder extends Seeder
     public function run()
     {
         Process::create([
-            'title'  => 'Proceso de Inv. Docente 2019 - I',
+            'title'  => 'Proceso de Inv. Docente 2023 - I',
             'type_project_id' => 1,
             'status' => 1,
             'maxy' => 1,
@@ -21,7 +21,7 @@ class ProcessSeeder extends Seeder
             'mind' => 0,
             ]);
         Process::create([
-            'title'  => 'Proceso de Tesis 2019 - I',
+            'title'  => 'Proceso de Tesis 2023 - I',
             'type_project_id' => 2,
             'status' => 1,
             'maxy' => 1,

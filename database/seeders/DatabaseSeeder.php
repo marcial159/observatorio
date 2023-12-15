@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
         DB::table('roles')->truncate();
         DB::table('students')->truncate();
         DB::table('type_projects')->truncate();
+        DB::table('types')->truncate();
         DB::table('users')->truncate();
         DB::table('permissions')->truncate();
         
@@ -35,7 +36,6 @@ class DatabaseSeeder extends Seeder
         $this->call(CareerSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(AsignamentSeeder::class);
-        $this->call(ProcessSeeder::class);
         $this->call(RolSeeder::class);
         $this->call(LineSeeder::class);
         $this->call(ImpactSeeder::class);
@@ -44,6 +44,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ProcessSeeder::class);
         $this->call(LecturerSeeder::class);
         $this->call(StudentSeeder::class);
+        $this->call(TypeSeeder::class);
         $this->call(UserSeeder::class);
     }
 }

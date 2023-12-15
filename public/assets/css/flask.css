@@ -192,9 +192,19 @@ input::file-selector-button {
 
 .multiselect-wrapper
 {
-    border: #cbcbcb .5px solid !important;
+    border: #cbcbcb 1px solid !important;
     border-radius: 5px;
     min-height: 32px !important;
+}
+
+.is-disabled .multiselect-wrapper
+{
+    background: #e9ecef;
+}
+
+.dark-version .is-disabled .multiselect-wrapper
+{
+    background: #3d4655;
 }
 
 .dark-version .modal-content
@@ -266,10 +276,10 @@ input::file-selector-button {
     color: #26A178;
 }
 
-.dark-version .multiselect-wrapper
+/* .dark-version .multiselect-wrapper
 {
     border: #888888 .5px solid !important;
-} 
+}  */
 
 .multiselect-search
 {
@@ -391,6 +401,13 @@ tr
     background: #3d4655;
     border: none;
 }
+
+.multiselect-wrapper
+{
+    background: #e9ecef;
+
+}
+
 .circle-status
 {
     width: 7px !important;
