@@ -151,7 +151,8 @@ export default
             vuenisimo.clearData( this.userSearchForm )
             vuenisimo.clearData( this.form )
             vuenisimo.clearError( this.form )
-            this.role_id = null,
+            this.role_id = null
+            this.disabled = true
             this.modal.show()
         },
 
