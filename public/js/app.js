@@ -20785,7 +20785,7 @@ __webpack_require__.r(__webpack_exports__);
       };
 
       if (this.password == this.confirm) {
-        this.axios.post(this.$uri + '/reset', data).then(function (response) {
+        this.axios.post("".concat(this.$uri, "/reset"), data).then(function (response) {
           _this.response = response.data;
           _this.textStick = 'Contraseña cambiada correctamente!';
           _this.iconStick = 'fa-check-circle';
@@ -20846,11 +20846,9 @@ __webpack_require__.r(__webpack_exports__);
         this.typeStick = '';
         this.showStick = false;
         this.loading = true;
-        var data = {
-          email: this.email,
-          type: 1
-        };
-        this.axios.post(this.$uri + '/recover', data).then(function (response) {
+        this.axios.post("".concat(this.$uri, "/recover"), {
+          email: this.email
+        }).then(function (response) {
           _this2.response = response.data;
           _this2.textStick = 'Enviamos el código a su correo!';
           _this2.iconStick = 'fa-check-circle';
@@ -23171,7 +23169,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     disabled: $data.loading,
     name: "password",
-    type: "text",
+    type: "password",
     "class": "form-control form-control-sm",
     minlength: "6",
     maxlength: "50",
@@ -23644,10 +23642,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "content area"
+  "class": "row position-relative"
 };
 var _hoisted_2 = {
-  "class": "container"
+  "class": "position-absolute"
 };
 var _hoisted_3 = {
   "class": "mt-lg-10 mt-0 md-11 mt-7"
@@ -23726,7 +23724,7 @@ var _hoisted_21 = {
 };
 var _hoisted_22 = ["disabled"];
 function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
     role: "form text-left",
     id: "recover-card",
     onSubmit: _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
@@ -23739,7 +23737,7 @@ function render(_ctx, _cache) {
     disabled: _ctx.loading || _ctx.bloking,
     name: "email",
     type: "email",
-    "class": "form-control form-control-sm px-0",
+    "class": "form-control form-control-sm",
     maxlength: "50",
     autocomplete: "new-email",
     required: ""

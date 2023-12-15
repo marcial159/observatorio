@@ -12,7 +12,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <label class="form-label">Nueva contraseña  (*)</label>
-                                <input :disabled="loading" name="password" type="text" class="form-control form-control-sm" minlength="6" maxlength="50" autocomplete="new-password" required>
+                                <input :disabled="loading" name="password" type="password" class="form-control form-control-sm" minlength="6" maxlength="50" autocomplete="new-password" required>
                                 <p error="password" class="error"></p>
                             </div>
                         </div>

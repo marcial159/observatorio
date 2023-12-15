@@ -1,6 +1,6 @@
 <template>
-    <section class="content area">
-        <div class="container">
+    <div class="row position-relative">
+        <div class="position-absolute">
             <div class="mt-lg-10 mt-0 md-11 mt-7">
                 <div class="col-xl-3 col-lg-5 col-md-7 mx-auto">
                     <div class="card z-index-0 animated pulse">
@@ -15,19 +15,19 @@
                                 </div>
                                 <p class="text-center text-xs">Ingrese sus datos por favor</p>
                                 <label class="form-label mt-3">Correo Electrónico :</label>
-                                <input v-model="email" :disabled="loading || bloking" name="email" type="email" class="form-control form-control-sm px-0" maxlength="50" autocomplete="new-email" required>
-
+                                <input v-model="email" :disabled="loading || bloking" name="email" type="email" class="form-control form-control-sm" maxlength="50" autocomplete="new-email" required>
+    
                                 <div class="col-12" v-if="showInput">
                                     <label class="form-label mt-3">Código enviado a su correo :</label>
                                     <input v-model="code" :disabled="loading" name="code" type="code" class="form-control form-control-sm" minlength="4" maxlength="4" autocomplete="new-code" required>
-
+    
                                     <label class="form-label mt-3">Nueva contraseña :</label>
                                     <input v-model="password" :disabled="loading" name="password" type="password" class="form-control form-control-sm" maxlength="50" autocomplete="new-password" required>
-
+    
                                     <label class="form-label mt-3">Confirmar contraseña :</label>
                                     <input v-model="confirm" :disabled="loading" name="confirm" type="password" class="form-control form-control-sm" maxlength="50" autocomplete="off" required>
                                 </div>
-
+    
                                 <div class="row mt-4">
                                     <div class="col-6 text-center">
                                         <button type="button" @click="$router.go(-1)" class="btn btn-outline-secondary btn-sm w-100 mb-0">Atrás</button>
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script lang="js">
@@ -110,7 +110,7 @@ export default
             }
             if(this.password == this.confirm)
             {
-                this.axios.post(this.$uri+'/reset', data)
+                this.axios.post( `${this.$uri}/reset`, data )
                 .then( response => {
                     this.response = response.data
                     this.textStick = 'Contraseña cambiada correctamente!'
@@ -173,12 +173,7 @@ export default
                 this.showStick = false
                 this.loading   = true
 
-                let data = {
-                    email : this.email,
-                    type  : 1,
-                }
-
-                this.axios.post(this.$uri+'/recover', data)
+                this.axios.post( `${this.$uri}/recover`, { email : this.email } )
                 .then( response => {
                     this.response = response.data
                     this.textStick = 'Enviamos el código a su correo!'

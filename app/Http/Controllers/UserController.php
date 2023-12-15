@@ -284,10 +284,11 @@ class UserController extends Controller
                 'message' => 'Usuario no encontrado',
             ], 404);
         }
-        PasswordReset::where( 'email' , $request->email )->where( 'type' , $request->type )->delete();
+        PasswordReset::where( 'email' , $request->email )->where( 'type' , 1 )->delete();
+        // dd($user);
         $reset = PasswordReset::create([
             'email' => $user->email,
-            'type'  => $user->type,
+            'type'  => $user->type_id,
             'token' => rand(1000, 9999),
         ]);
         Mail::to($user->email)->send(new UserPasswordReset( $user , $reset->token ));
@@ -318,7 +319,7 @@ class UserController extends Controller
 
     public function repassword( UserRepassword $request )
     {
-        $user = User::where([['type',1],['email',$request->email]])->first();
+        $user = User::where([['type_id',1],['email',$request->email]])->first();
         // return $user;
         if ($user)
         {
