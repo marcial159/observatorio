@@ -45,4 +45,11 @@ Route::group(['middleware' => ['jwt.verify']], function()
     Route::post( 'headquarter', 'App\Http\Controllers\HeadquarterController@store' )->middleware( 'can:headquarter.store' );
     Route::put( 'headquarter/{headquarter}', 'App\Http\Controllers\HeadquarterController@update' )->middleware( 'can:headquarter.update' );
     Route::delete( 'headquarter/{headquarter}', 'App\Http\Controllers\HeadquarterController@destroy' )->middleware( 'can:headquarter.destroy' );
+
+    //Rutas para Facultades
+    Route::post( 'faculty/list', 'App\Http\Controllers\FacultyController@list' )->middleware( 'can:faculty.list' );
+    Route::get( 'faculty/{faculty}', 'App\Http\Controllers\FacultyController@show' )->middleware( 'can:faculty.list' );
+    Route::post( 'faculty', 'App\Http\Controllers\FacultyController@store' )->middleware( 'can:faculty.store' );
+    Route::put( 'faculty/{faculty}', 'App\Http\Controllers\FacultyController@update' )->middleware( 'can:faculty.update' );
+    Route::delete( 'faculty/{faculty}', 'App\Http\Controllers\FacultyController@destroy' )->middleware( 'can:faculty.destroy' );
 });

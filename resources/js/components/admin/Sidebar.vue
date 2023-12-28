@@ -52,10 +52,87 @@
                                     <span class="sidenav-normal"> Sedes </span>
                                 </router-link>
                             </li>
+                            <li v-show="keys.includes('faculty.list')" class="nav-item" :class="(route == '/admin/faculty') ? 'active' : ''">
+                                <router-link class="nav-link" :to="{name: 'AdminFaculties'}" @click="activate">
+                                    <span class="sidenav-mini-icon"><i class="fa fa-circle-o text-xxs" aria-hidden="true"></i></span>
+                                    <span class="sidenav-normal"> Carreras </span>
+                                </router-link>
+                            </li>
+                            <li v-show="keys.includes('faculty.list')" class="nav-item" :class="(route == '/admin/faculty') ? 'active' : ''">
+                                <router-link class="nav-link" :to="{name: 'AdminFaculties'}" @click="activate">
+                                    <span class="sidenav-mini-icon"><i class="fa fa-circle-o text-xxs" aria-hidden="true"></i></span>
+                                    <span class="sidenav-normal"> Facultades </span>
+                                </router-link>
+                            </li>
+                            <li v-show="keys.includes('faculty.list')" class="nav-item" :class="(route == '/admin/faculty') ? 'active' : ''">
+                                <router-link class="nav-link" :to="{name: 'AdminFaculties'}" @click="activate">
+                                    <span class="sidenav-mini-icon"><i class="fa fa-circle-o text-xxs" aria-hidden="true"></i></span>
+                                    <span class="sidenav-normal"> Laboratorios </span>
+                                </router-link>
+                            </li>                            
                         </ul>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" :class="(route == '/admin/user') ? 'active' : ''" :to="{name: 'AdminUsers'}" @click="activate">
+                        <i class="lni lni-coin fs-6" :class="(route == '/admin/user') ? 'text-success' : ''"></i>
+                        <span class="nav-link-text ms-1">Rubros</span>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" :class="(route == '/admin/user') ? 'active' : ''" :to="{name: 'AdminUsers'}" @click="activate">
+                        <i class="lni lni-cup fs-6" :class="(route == '/admin/user') ? 'text-success' : ''"></i>
+                        <span class="nav-link-text ms-1">Concursos</span>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" :class="(route == '/admin/user') ? 'active' : ''" :to="{name: 'AdminUsers'}" @click="activate">
+                        <i class="lni lni-construction-hammer fs-6" :class="(route == '/admin/user') ? 'text-success' : ''"></i>
+                        <span class="nav-link-text ms-1">Jurados</span>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" :class="(route == '/admin/user') ? 'active' : ''" :to="{name: 'AdminUsers'}" @click="activate">
+                        <i class="lni lni-handshake fs-6" :class="(route == '/admin/user') ? 'text-success' : ''"></i>
+                        <span class="nav-link-text ms-1">Equipos</span>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" :class="(route == '/admin/user') ? 'active' : ''" :to="{name: 'AdminUsers'}" @click="activate">
+                        <i class="lni lni-graduation fs-6" :class="(route == '/admin/user') ? 'text-success' : ''"></i>
+                        <span class="nav-link-text ms-1">Estudiantes</span>
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" :class="(route == '/admin/user') ? 'active' : ''" :to="{name: 'AdminUsers'}" @click="activate">
+                        <i class="lni lni-library fs-6" :class="(route == '/admin/user') ? 'text-success' : ''"></i>
+                        <span class="nav-link-text ms-1">Docentes</span>
+                    </router-link>
+                </li>
+                <li v-show="keys.includes('role.list') || keys.includes('user.list')" class="nav-item">
+                    <a data-bs-toggle="collapse" href="#personal" class="nav-link" :class="(route == '/admin/roles' || route == '/admin/users') ? 'active' : ''" aria-controls="personal" role="button" :aria-expanded="(route == '/admin/roles') ? 'true' : 'false'">
+                        <i class="lni lni-consulting" :class="(route == '/admin/roles' || route == '/admin/users') ? 'text-success' : ''"></i>
+                        <span class="nav-link-text ms-1">Institutos</span>
+                    </a>
+                    <div class="collapse" :class="(route == '/admin/roles' || route == '/admin/users') ? 'show' : ''" id="personal">
+                        <ul class="nav">
+                            <li v-show="keys.includes('role.list')" class="nav-item" :class="(route == '/admin/roles') ? 'active' : ''">
+                                <router-link class="nav-link" :to="{name: 'AdminRoles'}" @click="activate">
+                                    <span class="sidenav-mini-icon"><i class="fa fa-circle-o text-xxs" aria-hidden="true"></i></span>
+                                    <span class="sidenav-normal"> Inv. Docente </span>
+                                </router-link>
+                            </li>
+                            <li v-show="keys.includes('user.list')" class="nav-item" :class="(route == '/admin/users') ? 'active' : ''">
+                                <router-link class="nav-link" :to="{name: 'AdminUsers'}" @click="activate">
+                                    <span class="sidenav-mini-icon"><i class="fa fa-circle-o text-xxs" aria-hidden="true"></i></span>
+                                    <span class="sidenav-normal"> Inv. Estudiante </span>
+                                </router-link>
+                            </li>
+                        </ul>
+                    </div>
+                </li>               
             </ul>
+            
         </div>
     </aside>
 </template>

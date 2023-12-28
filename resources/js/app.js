@@ -24,6 +24,6 @@ app.mount('#app')
 // * Nombre de la app
 app.config.globalProperties.$name = 'Flask'
 // * Uri a usar
-app.config.globalProperties.$uri = 'http://localhost:3000/api'
+app.config.globalProperties.$uri = 'http://localhost:8000/api'
 // app.config.globalProperties.$uri = 'https://unamba.com/api'
 // =============================================================

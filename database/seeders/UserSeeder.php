@@ -14,10 +14,10 @@ class UserSeeder extends Seeder
         $user = User::create([
             'type_id' => 1,
             'person_id' => 1,
-            'firstname' => 'Usuario',
-            'lastname' => 'Test',
-            'email' => 'test@test.com',
-            'password' => Hash::make('test123123123')
+            'firstname' => 'Marcial',
+            'lastname' => 'Salazar',
+            'email' => '121179@unamba.edu.pe',
+            'password' => Hash::make('mar123456')
         ]);
         $user->assignRole('Admin');
     }
