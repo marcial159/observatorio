@@ -52,8 +52,8 @@
                                     <span class="sidenav-normal"> Sedes </span>
                                 </router-link>
                             </li>
-                            <li v-show="keys.includes('faculty.list')" class="nav-item" :class="(route == '/admin/faculty') ? 'active' : ''">
-                                <router-link class="nav-link" :to="{name: 'AdminFaculties'}" @click="activate">
+                            <li v-show="keys.includes('career.list')" class="nav-item" :class="(route == '/admin/careers') ? 'active' : ''">
+                                <router-link class="nav-link" :to="{name: 'AdminCareers'}" @click="activate">
                                     <span class="sidenav-mini-icon"><i class="fa fa-circle-o text-xxs" aria-hidden="true"></i></span>
                                     <span class="sidenav-normal"> Carreras </span>
                                 </router-link>

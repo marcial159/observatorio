@@ -58,7 +58,7 @@ class FacultyController extends Controller
     public function resources()
     {
         return response()->json([
-            'headquarters' => HeadquarterController::relation(),
+            'faculties' => FacultyController::relation(),
         ]);
     }
 }

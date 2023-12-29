@@ -1,11 +1,11 @@
 <template>
-    <div class="position-absolute container-fluid" v-show="keys.includes( `faculty.list` )">
+    <div class="position-absolute container-fluid" v-show="keys.includes( `career.list` )">
         <div class="card">
             <div class="card-body">
                 <div class="row">
                     <div class="col-6 text-start animate__animated animate__fadeInDown">
                         <h6>
-                            <i class="lni lni-map-marker text-success me-2"></i>Facultades
+                            <i class="lni lni-map-marker text-success me-2"></i>Carreras
                         </h6>
                     </div>
                     <div class="col-6 text-end mb-4">
@@ -16,7 +16,7 @@
                             <i class="lni lni-sort-amount-dsc me-1 fw-bold"></i>
                             Filtros
                         </button>
-                        <button class="btn btn-sm btn-success mb-0" v-show="keys.includes( `faculty.store` )" @click="$refs.StoreComponent.store()">
+                        <button class="btn btn-sm btn-success mb-0" v-show="keys.includes( `career.store` )" @click="$refs.StoreComponent.store()">
                             <i class="lni lni-circle-plus me-1 fs-7 fw-bold"></i>
                             Nuevo
                         </button>
@@ -26,13 +26,13 @@
                     <div id="filters" class="collapse">
                         <div class="col-md-12 col-sm-12 mb-4 text-start">
                             <find-component
-                            id="facultyFilt"
+                            id="careerFilt"
                             @filts="e => { filters = e, listing() }"
                             />
                         </div>
                     </div>
                 </div>
-                <div class="row position-relative" id="facultyArea">
+                <div class="row position-relative" id="careerArea">
                     <table-component
                     :data="list.data"
                     @update="e => $refs.UpdateComponent.update( e )"
@@ -50,17 +50,17 @@
             </div>
         </div>
         <store-component
-        id="StoreFaculty"
+        id="StoreCareer"
         ref="StoreComponent"
         @reload="listing()"
         />
         <update-component
-        id="UpdateFaculty"
+        id="UpdateCareer"
         ref="UpdateComponent"
         @row="e => replace( list.data, e )"
         />
         <destroy-component
-        id="DestroyFaculty"
+        id="DestroyCareer"
         ref="DestroyComponent"
         @reload="listing()"
         />
@@ -106,7 +106,7 @@ export default
 
     mounted()
     {
-        this.area = document.getElementById( `facultyArea` )
+        this.area = document.getElementById( `careerArea` )
     },
 
     methods:
@@ -115,7 +115,7 @@ export default
         {
             vuenisimo.loader( this.area, true )
             this.axios.defaults.headers.common[ `Authorization` ] = `Bearer ${JSON.parse( localStorage.getItem( `user` ) ).token}`
-            this.axios.post( `${this.$uri}/faculty/list?page=${this.page}`, this.filters )
+            this.axios.post( `${this.$uri}/career/list?page=${this.page}`, this.filters )
             .then( response =>
             {
                 this.list = response.data

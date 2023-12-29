@@ -52,4 +52,11 @@ Route::group(['middleware' => ['jwt.verify']], function()
     Route::post( 'faculty', 'App\Http\Controllers\FacultyController@store' )->middleware( 'can:faculty.store' );
     Route::put( 'faculty/{faculty}', 'App\Http\Controllers\FacultyController@update' )->middleware( 'can:faculty.update' );
     Route::delete( 'faculty/{faculty}', 'App\Http\Controllers\FacultyController@destroy' )->middleware( 'can:faculty.destroy' );
+
+    //Rutas para Carreras
+    Route::post( 'career/list', 'App\Http\Controllers\CareerController@list' )->middleware( 'can:career.list' );
+    Route::get( 'career/{career}', 'App\Http\Controllers\CareerController@show' )->middleware( 'can:career.list' );
+    Route::post( 'career', 'App\Http\Controllers\CareerController@store' )->middleware( 'can:career.store' );
+    Route::put( 'career/{career}', 'App\Http\Controllers\CareerController@update' )->middleware( 'can:career.update' );
+    Route::delete( 'career/{career}', 'App\Http\Controllers\CareerController@destroy' )->middleware( 'can:career.destroy' );
 });
