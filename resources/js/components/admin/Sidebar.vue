@@ -3,9 +3,9 @@
         <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
         <router-link class="navbar-brand m-0" :class="(route == '/admin/dashboard') ? 'active' : ''" :to="{name: 'AdminDashboard'}">
-            <img :src="'../assets/img/logo.png'" class="navbar-brand-img h-100" alt="main_logo">
-            <span class="ms-1 font-weight-bold fs-6">Flask</span>
-            <small class="ms-2 text-xs">V 2.0</small>
+            <img :src="'../assets/img/unamba.png'" class="navbar-brand-img h-100" alt="main_logo">
+            <span class="ms-1 font-weight-bold fs-6"> VRIN UNAMBA</span>
+            <!--<small class="ms-2 text-xs">DIIT</small>-->
         </router-link>
         </div>
         <hr class="horizontal dark mt-0">
@@ -64,8 +64,8 @@
                                     <span class="sidenav-normal"> Facultades </span>
                                 </router-link>
                             </li>
-                            <li v-show="keys.includes('faculty.list')" class="nav-item" :class="(route == '/admin/faculty') ? 'active' : ''">
-                                <router-link class="nav-link" :to="{name: 'AdminFaculties'}" @click="activate">
+                            <li v-show="keys.includes('laboratory.list')" class="nav-item" :class="(route == '/admin/laboratory') ? 'active' : ''">
+                                <router-link class="nav-link" :to="{name: 'AdminLaboratories'}" @click="activate">
                                     <span class="sidenav-mini-icon"><i class="fa fa-circle-o text-xxs" aria-hidden="true"></i></span>
                                     <span class="sidenav-normal"> Laboratorios </span>
                                 </router-link>
@@ -110,11 +110,11 @@
                     </router-link>
                 </li>
                 <li v-show="keys.includes('role.list') || keys.includes('user.list')" class="nav-item">
-                    <a data-bs-toggle="collapse" href="#personal" class="nav-link" :class="(route == '/admin/roles' || route == '/admin/users') ? 'active' : ''" aria-controls="personal" role="button" :aria-expanded="(route == '/admin/roles') ? 'true' : 'false'">
+                    <a data-bs-toggle="collapse" href="#institutes" class="nav-link" :class="(route == '/admin/roles' || route == '/admin/users') ? 'active' : ''" aria-controls="institutes" role="button" :aria-expanded="(route == '/admin/roles') ? 'true' : 'false'">
                         <i class="lni lni-consulting" :class="(route == '/admin/roles' || route == '/admin/users') ? 'text-success' : ''"></i>
                         <span class="nav-link-text ms-1">Institutos</span>
                     </a>
-                    <div class="collapse" :class="(route == '/admin/roles' || route == '/admin/users') ? 'show' : ''" id="personal">
+                    <div class="collapse" :class="(route == '/admin/roles' || route == '/admin/users') ? 'show' : ''" id="institutes">
                         <ul class="nav">
                             <li v-show="keys.includes('role.list')" class="nav-item" :class="(route == '/admin/roles') ? 'active' : ''">
                                 <router-link class="nav-link" :to="{name: 'AdminRoles'}" @click="activate">

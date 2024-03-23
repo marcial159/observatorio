@@ -59,4 +59,11 @@ Route::group(['middleware' => ['jwt.verify']], function()
     Route::post( 'career', 'App\Http\Controllers\CareerController@store' )->middleware( 'can:career.store' );
     Route::put( 'career/{career}', 'App\Http\Controllers\CareerController@update' )->middleware( 'can:career.update' );
     Route::delete( 'career/{career}', 'App\Http\Controllers\CareerController@destroy' )->middleware( 'can:career.destroy' );
+
+    //rutas para Laboratorios
+    Route::post( 'laboratory/list', 'App\Http\Controllers\LaboratoryController@list' )->middleware( 'can:laboratory.list' );
+    Route::get( 'laboratory/{laboratory}', 'App\Http\Controllers\LaboratoryController@show' )->middleware( 'can:laboratory.list' );
+    Route::post( 'laboratory', 'App\Http\Controllers\LaboratoryController@store' )->middleware( 'can:laboratory.store' );
+    Route::put( 'laboratory/{laboratory}', 'App\Http\Controllers\LaboratoryController@update' )->middleware( 'can:laboratory.update' );
+    Route::delete( 'laboratory/{laboratory}', 'App\Http\Controllers\LaboratoryController@destroy' )->middleware( 'can:laboratory.destroy' );
 });

@@ -2,12 +2,12 @@
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur" data-scroll="false">
         <div class="container-fluid py-1 px-3">
             <nav aria-label="breadcrumb">
-                <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/argon-dashboard" target="_blank">UI</a> /
+                <!--<a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/argon-dashboard" target="_blank">UI</a> /
                 <a href="https://lineicons.com/icons/" target="_blank">Icons</a> /
                 <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap</a> /
                 <a href="https://laravel.com/docs/9.x" target="_blank">Laravel</a> / 
                 <a href="https://vuejs.org/guide/introduction.html" target="_blank">Vue</a> /
-                <a href="https://github.com/vueform/multiselect" target="_blank">Multiselect</a>
+                <a href="https://github.com/vueform/multiselect" target="_blank">Multiselect</a>-->
             </nav>
             <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
                 <div class="ms-md-auto pe-md-3 d-flex align-items-center">

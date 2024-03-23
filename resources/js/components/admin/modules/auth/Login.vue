@@ -7,7 +7,7 @@
                         <form id="adminLogin" role="form text-left" @submit.prevent="login">
                             <div class="card-body">
                                 <div class="mb-3 text-center">
-                                    <img :src="'../assets/img/logo.png'" class="w-25" alt="main_logo">
+                                    <img :src="'../assets/img/Unamba.png'" class="w-25" alt="main_logo">
                                     <h6 class="">Iniciar sesión</h6>
                                 </div>
                                 <div class="loading-validate text-center">

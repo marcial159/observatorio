@@ -2,9 +2,9 @@
     <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent">
         <div class="container">
             <router-link class="navbar-brand m-0" :to="{name: 'Landing'}">
-                <img :src="'../assets/img/logo.png'" class="navbar-brand-img w-25" alt="main_logo">
-                <span class="ms-1 font-weight-bold fs-5">Flask</span>
-                <small class="ms-2 fs-7">V 2.0</small>
+                <img :src="'../assets/img/Unamba.png'" class="navbar-brand-img w-25" alt="main_logo">
+                <span class="ms-1 font-weight-bold fs-5">UNAMBA</span>
+                <!--<small class="ms-2 fs-7">V 2.0</small>-->
             </router-link>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon mt-2">

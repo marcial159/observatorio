@@ -11,6 +11,7 @@ import AdminUsers from '../components/admin/modules/users/Index.vue'
 import AdminHeadquarters from '../components/admin/modules/headquarters/Index.vue'
 import AdminFaculties from '../components/admin/modules/faculties/Index.vue'
 import AdminCareers from '../components/admin/modules/careers/Index.vue'
+import AdminLaboratories from '../components/admin/modules/laboratories/Index.vue'
 // Vista de errores
 import Error404 from '../components/errors/404.vue'
 
@@ -28,6 +29,7 @@ const router = createRouter({
         { path: '/admin/headquarters' ,component: AdminHeadquarters, name: 'AdminHeadquarters', meta: { requiresAuth: true } },
         { path: '/admin/faculties' ,component: AdminFaculties, name: 'AdminFaculties', meta: { requiresAuth: true } },
         { path: '/admin/careers' ,component: AdminCareers, name: 'AdminCareers', meta: { requiresAuth: true } },
+        { path: '/admin/laboratories' ,component: AdminLaboratories, name: 'AdminLaboratories', meta: { requiresAuth: true } },
         // Rutas para errores
         { path: "/:catchAll(.*)", component: Error404 , name: '404' },
     ]
