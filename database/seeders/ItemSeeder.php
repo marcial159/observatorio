@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Item;
 
 class ItemSeeder extends Seeder
 {
@@ -14,7 +15,7 @@ class ItemSeeder extends Seeder
      */
     public function run()
     {
-        $items = [
+        /*$items = [
             [
                 'name' => 'Materiales e insumos',
                 'description' => 'Materiales e insumos para las actividades del proyecto.',
@@ -43,7 +44,19 @@ class ItemSeeder extends Seeder
                 'name' => 'Equipos y bienes duraderos',
                 'description' => 'Equipos menores relacionados al desarrollo del proyecto. Los equipos y bienes duraderos serán comprados a nombre de la universidad.',
             ],
-        ];
+        ];*/
+        Item::create([
+            'name'    => 'Equipamento',
+            'description'  => 'Equipo relacionado a la investigacion',
+            'type'    => '2',
+            'status' => '1',
+        ]);
+        Item::create([
+            'name'    => 'Equipos y bienes duraderos',
+            'description'  => 'Equipos menores relacionados al desarrollo del proyecto. Los equipos y bienes duraderos serán comprados a nombre de la universidad.',
+            'type'    => '3',
+            'status' => '1',
+        ]);
 
     }
 }

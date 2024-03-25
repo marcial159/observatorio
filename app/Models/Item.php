@@ -14,6 +14,7 @@ class Item extends Model
         'type',
         'status',
     ];
+    
     public function getTypeAttribute($value)
     {
         switch ($value) {

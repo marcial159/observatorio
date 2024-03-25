@@ -40,8 +40,8 @@
 
                         <td class="align-middle animate__animated animate__fadeIn" :title="element.description">
                             <small class="mb-0 text-xs">
-                                <span v-if="element.description?.length <= 120">{{ element.description }}</span>
-                                <span v-else>{{ element.description?.substring(0, 120) }}...</span>
+                                <span v-if="element.description?.length <= 60">{{ element.description }}</span>
+                                <span v-else>{{ element.description?.substring(0, 60) }}...</span>
                             </small>
                         </td>
 
@@ -68,6 +68,13 @@
                                 <i class="lni lni-grid-alt fw-bold"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropMenu">
+
+                                <li class="cursor-pointer">
+                                    <a class="dropdown-item" v-show="keys.includes(`user.update`)"
+                                        @click="$emit(`update`, element)">
+                                        <i class="fa fa-eye me-2" aria-hidden="true"></i>Ver
+                                    </a>
+                                </li>
 
                                 <li class="cursor-pointer">
                                     <a class="dropdown-item" v-show="keys.includes(`user.update`)"

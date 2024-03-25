@@ -109,6 +109,7 @@
                         <span class="nav-link-text ms-1">Docentes</span>
                     </router-link>
                 </li>
+                <span class="nav-link-text ms-1">Registro y Monitoreo</span>
                 <li v-show="keys.includes('role.list') || keys.includes('user.list')" class="nav-item">
                     <a data-bs-toggle="collapse" href="#institutes" class="nav-link" :class="(route == '/admin/roles' || route == '/admin/users') ? 'active' : ''" aria-controls="institutes" role="button" :aria-expanded="(route == '/admin/roles') ? 'true' : 'false'">
                         <i class="lni lni-consulting" :class="(route == '/admin/roles' || route == '/admin/users') ? 'text-success' : ''"></i>
