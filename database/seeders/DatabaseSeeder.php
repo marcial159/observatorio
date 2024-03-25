@@ -16,6 +16,8 @@ class DatabaseSeeder extends Seeder
         DB::table('faculties')->truncate();
         DB::table('headquarters')->truncate();
         DB::table('impacts')->truncate();
+        DB::table('items')->truncate();
+        DB::table('item__announcements')->truncate();
         DB::table('laboratories')->truncate();
         DB::table('lecturers')->truncate();
         DB::table('lines')->truncate();
@@ -27,6 +29,7 @@ class DatabaseSeeder extends Seeder
         DB::table('types')->truncate();
         DB::table('users')->truncate();
         DB::table('permissions')->truncate();
+        
         
         DB::statement('SET FOREIGN_KEY_CHECKS = 1;');
         $this->call(TypeProjectSeeder::class);
@@ -46,5 +49,6 @@ class DatabaseSeeder extends Seeder
         $this->call(StudentSeeder::class);
         $this->call(TypeSeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(ItemSeeder::class);
     }
 }

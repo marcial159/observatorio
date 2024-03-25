@@ -12,6 +12,9 @@ import AdminHeadquarters from '../components/admin/modules/headquarters/Index.vu
 import AdminFaculties from '../components/admin/modules/faculties/Index.vue'
 import AdminCareers from '../components/admin/modules/careers/Index.vue'
 import AdminLaboratories from '../components/admin/modules/laboratories/Index.vue'
+import AdminAnnouncements from '../components/admin/modules/announcements/Index.vue'
+import AdminItems from '../components/admin/modules/items/Index.vue'
+import AdminInvestigationStudents from '../components/admin/modules/investigation_students/Index.vue'
 // Vista de errores
 import Error404 from '../components/errors/404.vue'
 
@@ -30,6 +33,9 @@ const router = createRouter({
         { path: '/admin/faculties' ,component: AdminFaculties, name: 'AdminFaculties', meta: { requiresAuth: true } },
         { path: '/admin/careers' ,component: AdminCareers, name: 'AdminCareers', meta: { requiresAuth: true } },
         { path: '/admin/laboratories' ,component: AdminLaboratories, name: 'AdminLaboratories', meta: { requiresAuth: true } },
+        { path: '/admin/announcements', component: AdminAnnouncements, name: 'AdminAnnouncements', meta: { requiresAuth: true } },
+        { path: '/admin/items', component: AdminItems, name: 'AdminItems', meta: { requiresAuth: true } },
+        { path: '/admin/investigation_students', component: AdminInvestigationStudents, name: 'AdminInvestigationStudents', meta: { requiresAuth: true } },
         // Rutas para errores
         { path: "/:catchAll(.*)", component: Error404 , name: '404' },
     ]

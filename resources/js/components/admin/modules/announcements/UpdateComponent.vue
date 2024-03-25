@@ -8,20 +8,20 @@
                             <div class="col-12">
                                 <h5 class="modal-title text-sm d-inline-block">
                                     <i class="lni lni-pencil-alt me-1 fw-bold text-success"></i>
-                                    Modificar Carrera
+                                    Modificar Concurso
                                 </h5>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-5">
-                                <label class="form-label">Nombre (*)</label>
+                                <label class="form-label">Titulo (*)</label>
                                 <input type="text" name="name" class="form-control form-control-sm" maxlength="30" autocomplete="off" required>
                                 <p error="name" class="error"></p>
                             </div>
                             <div class="col-7">
-                                <label class="form-label">Acronimo (*)</label>
-                                <input type="text" name="acronym" class="form-control form-control-sm" maxlength="40" autocomplete="off" required>
-                                <p error="acronym" class="error"></p>
+                                <label class="form-label">Tipo de Proyecto (*)</label>
+                                <input type="text" name="type_project_id" class="form-control form-control-sm" maxlength="40" autocomplete="off" required>
+                                <p error="type_project_id" class="error"></p>
                             </div>
                         </div>
                         <div class="row">
@@ -71,7 +71,7 @@ export default
             vuenisimo.clearData( this.form )
             vuenisimo.clearError( this.form )
             vuenisimo.loader( this.form, true )
-            this.axios.get( `${this.$uri}/career/${element.id}` )
+            this.axios.get( `${this.$uri}/carrer/${element.id}` )
             .then( response =>
             {
                 vuenisimo.setData( this.form, response.data )
@@ -94,7 +94,7 @@ export default
             vuenisimo.processing( this.modal, true )
             let data = vuenisimo.getData( this.form )
             data.id = this.element.id
-            this.axios.put( `${this.$uri}/career/${this.element.id}`, data )
+            this.axios.put( `${this.$uri}/carrer/${this.element.id}`, data )
             .then( response =>
             {
                 this.modal.hide()

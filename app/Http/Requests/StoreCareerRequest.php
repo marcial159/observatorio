@@ -12,12 +12,10 @@ class StoreCareerRequest extends FormRequest
     public function rules()
     {
         return [
-            'program' => 'required|string|max:3|unique:careers,program',
-            'name' => 'required|string|max:50|unique:careers,name',
-            'acronym' => 'required|string|max:10|unique:careers,acronym',
+            'investigation_id' => 'required|integer|max:10|unique:careers,faculty_id',
+            'student_id' => 'required|integer|max:10|unique:careers,faculty_id',
             'faculty_id' => 'required|integer|max:10|unique:careers,faculty_id',
             'shield' => 'required|string|max:30|unique:careers,shield',
-
         ];
     }
 }

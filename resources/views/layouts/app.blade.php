@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Flask</title>
-        <link rel="icon" href="{{asset('assets/img/logo.png')}}">
+        <title>Observatorio Unamba</title>
+        <link rel="icon" href="{{asset('assets/img/unamba.png')}}">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         <link href="{{asset('assets/css/nucleo-icons.css')}}" rel="stylesheet" />
         <link href="{{asset('assets/css/nucleo-svg.css')}}" rel="stylesheet" />

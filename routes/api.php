@@ -66,4 +66,33 @@ Route::group(['middleware' => ['jwt.verify']], function()
     Route::post( 'laboratory', 'App\Http\Controllers\LaboratoryController@store' )->middleware( 'can:laboratory.store' );
     Route::put( 'laboratory/{laboratory}', 'App\Http\Controllers\LaboratoryController@update' )->middleware( 'can:laboratory.update' );
     Route::delete( 'laboratory/{laboratory}', 'App\Http\Controllers\LaboratoryController@destroy' )->middleware( 'can:laboratory.destroy' );
+
+    //Rutas para Concursos
+    Route::post( 'announcement/list', 'App\Http\Controllers\AnnouncementController@list' )->middleware( 'can:announcement.list' );
+    Route::get( 'announcement/{announcement}', 'App\Http\Controllers\AnnouncementController@show' )->middleware( 'can:announcement.list' );
+    Route::post( 'announcement', 'App\Http\Controllers\AnnouncementController@store' )->middleware( 'can:announcement.store' );
+    Route::put( 'announcement/{announcement}', 'App\Http\Controllers\AnnouncementController@update' )->middleware( 'can:announcement.update' );
+    Route::delete( 'announcement/{announcement}', 'App\Http\Controllers\AnnouncementController@destroy' )->middleware( 'can:announcement.destroy' );
+
+    //rutas inv Estudiantes
+    Route::post( 'investigation_student/list', 'App\Http\Controllers\InvestigationStudentController@list' )->middleware( 'can:investigation_student.list' );
+    Route::get( 'investigation_student/{investigation_student}', 'App\Http\Controllers\InvestigationStudentController@show' )->middleware( 'can:investigation_student.list' );
+    Route::post( 'investigation_student', 'App\Http\Controllers\InvestigationStudentController@store' )->middleware( 'can:investigation_student.store' );
+    Route::put( 'investigation_student/{investigation_student}', 'App\Http\Controllers\InvestigationStudentController@update' )->middleware( 'can:investigation_student.update' );
+    Route::delete( 'investigation_student/{investigation_student}', 'App\Http\Controllers\InvestigationStudentController@destroy' )->middleware( 'can:investigation_student.destroy' );
+
+
+    /*Route::post( 'item/list', 'App\Http\Controllers\ItemController@list' )->middleware( 'can:item.list' );
+    Route::get( 'item/{item}', 'App\Http\Controllers\ItemController@show' )->middleware( 'can:item.list' );
+    Route::post( 'item', 'App\Http\Controllers\ItemController@store' )->middleware( 'can:item.store' );
+    Route::put( 'item/{item}', 'App\Http\Controllers\ItemController@update' )->middleware( 'can:item.update' );
+    Route::delete( 'item/{item}', 'App\Http\Controllers\ItemController@destroy' )->middleware( 'can:item.destroy' );*/
+    
+    //Ruta de los rubros
+    Route::post('item/list', 'App\Http\Controllers\ItemController@list');
+    Route::post('item', 'App\Http\Controllers\ItemController@store');
+    Route::delete('item/{item}', 'App\Http\Controllers\ItemController@destroy');
+    Route::put('item/{item}', 'App\Http\Controllers\ItemController@update');
+    Route::get('item/{item}', 'App\Http\Controllers\ItemController@show');
+
 });
