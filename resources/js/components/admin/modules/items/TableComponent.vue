@@ -71,6 +71,13 @@
                                 <li class="cursor-pointer">
                                     <a class="dropdown-item" v-show="keys.includes(`user.update`)"
                                         @click="$emit(`update`, element)">
+                                        <i class="fa fa-eye me-2" aria-hidden="true"></i>Ver
+                                    </a>
+                                </li>
+
+                                <li class="cursor-pointer">
+                                    <a class="dropdown-item" v-show="keys.includes(`user.update`)"
+                                        @click="$emit(`update`, element)">
                                         <i class="fa fa-pencil-square-o me-2" aria-hidden="true"></i>Modificar
                                     </a>
                                 </li>
