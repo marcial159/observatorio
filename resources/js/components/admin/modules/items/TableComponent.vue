@@ -40,24 +40,23 @@
 
                         <td class="align-middle animate__animated animate__fadeIn" :title="element.description">
                             <small class="mb-0 text-xs">
-                                <span v-if="element.description?.length <= 120">{{ element.description }}</span>
-                                <span v-else>{{ element.description?.substring(0, 120) }}...</span>
+                                <span v-if="element.description?.length <= 60">{{ element.description }}</span>
+                                <span v-else>{{ element.description?.substring(0, 60) }}...</span>
                             </small>
                         </td>
 
                         <td class="align-middle text-center animate__animated animate__fadeIn">
                             <small class="mb-0 text-xs">
-                                <span v-if="element.status === 1" style="width: 50px;" class="badge bg-success">Investigacion</span>
-                                <span v-else-if="element.status === 2" style="width: 50px;" class="badge bg-secondary">Incubadora</span>
-                                <span v-else style="width: 50px;" class="badge bg-light text-dark">General</span>
+                                <span v-if="element.type === 'Investigación'" style="width: 80px;" class="badge bg-info">Investigacion</span>
+                                <span v-else-if="element.type === 'Incubadora'" style="width: 70px;" class="badge bg-secondary">Incubadora</span>
+                                <span v-else-if="element.type === 'General'" style="width: 50px;" class="badge bg-primary">General</span>                                
                             </small>
                         </td>
 
                         <td class="align-middle text-center animate__animated animate__fadeIn">
                             <small class="mb-0 text-xs">
-                                <span v-if="element.status == 1" style="width: 50px;" class="badge bg-success">Activo</span>
-                                <span v-else style="width: 50px;"
-                                    class="badge bg-danger">Inactivo</span>
+                                <span v-if="element.status == 'Activo'" style="width: 50px;" class="badge bg-success">Activo</span>
+                                <span v-else style="width: 50px;" class="badge bg-danger">Inactivo</span>
                             </small>
                         </td>
 

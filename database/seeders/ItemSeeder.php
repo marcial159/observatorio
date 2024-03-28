@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Item;
 
 class ItemSeeder extends Seeder
 {
@@ -14,36 +15,30 @@ class ItemSeeder extends Seeder
      */
     public function run()
     {
-        $items = [
-            [
-                'name' => 'Materiales e insumos',
-                'description' => 'Materiales e insumos para las actividades del proyecto.',
-            ],
-            [
-                'name' => 'Consultorías y/o mentorías especializadas',
-                'description' => 'Asesorías individuales o de empresas y asistencia administrativa designada por el VRIN.',
-            ],
-            [
-                'name' => 'Servicios tecnológicos y empresariales',
-                'description' => 'Servicios tecnológicos y empresariales necesarios para el proyecto.',
-            ],
-            [
-                'name' => 'Pasajes y viáticos',
-                'description' => 'Pasajes y viáticos para trabajo de campo y capacitación, eventos de networking y participación en programas de incubación o aceleración.',
-            ],
-            [
-                'name' => 'Otros gastos',
-                'description' => 'Material bibliográfico y bases de datos especializadas.',
-            ],
-            [
-                'name' => 'Gastos de Gestión',
-                'description' => 'Gastos relacionados con la gestión y administración del proyecto.',
-            ],
-            [
-                'name' => 'Equipos y bienes duraderos',
-                'description' => 'Equipos menores relacionados al desarrollo del proyecto. Los equipos y bienes duraderos serán comprados a nombre de la universidad.',
-            ],
-        ];
+        Item::create([
+            'name'       => 'Equipamento',
+            'description'    => 'maquinas, equipos y herramientas de investigacion',
+            'type' => 1,
+            'status' => 1,
+        ]);
+        Item::create([
+            'name'       => 'materiales e insumos',
+            'description'    => 'comprende los diferentes bienes o instrumentos de laboratorio o de campo requeridos para el desarrollo del proyecto',
+            'type' => 1,
+            'status' => 0,
+        ]);
+        Item::create([
+            'name'       => 'Servivios Diversos',
+            'description'    => 'Servicios de capaciotacion, servicios para analisis especializados, otros servicios',
+            'type' => 3,
+            'status' => 1,
+        ]);
+        Item::create([
+            'name'       => 'Monitoreo',
+            'description'    => 'comprende egresos relacionados al monitoreo, seguimiento y supervision',
+            'type' => 2,
+            'status' => 1,
+        ]);
 
     }
 }

@@ -12,11 +12,13 @@ class UpdateItemRequest extends FormRequest
 
     public function rules( Request $request )
     {
+        $itemId = $this->route('item')->id;
+
         return [            
-            'name' => 'required|string|max: 255|unique:items,name,'.$this->route('item')->id,
-            'description' => 'required|string|max: 255|unique:items,description,'.$this->route('item')->id,
-            'type' => 'required|integer|between:0,3|unique:items,type,'.$this->route('item')->id,
-            'status' => 'required|integer|between:0,2|unique:items,type,'.$this->route('item')->id,
+            'name' => 'required|string|max:255|unique:items,name,'.$itemId,
+            'description' => 'required|string|max:255',
+            'type' => 'required|integer|between:0,3',
+            'status' => 'required|integer|between:0,2',
         ];
     }
 }
