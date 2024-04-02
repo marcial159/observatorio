@@ -23,9 +23,7 @@
 
                             <div class="col-12">
                                 <label class="form-label">Tipo (*)</label>
-                                <input type="text" name="type" class="form-control form-control-sm"
-                                    autocomplete="new-text">
-                                <!--<select name="type" class="form-control form-control-sm">
+                                <select name="type" class="form-control form-control-sm">
                                     <option disabled value="" selected>- Seleccione un tipo -</option>
                                     <option value="3">Incubadora</option>
                                     <option value="2">Investigacion</option>

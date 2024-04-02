@@ -31331,12 +31331,23 @@ var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "col-12"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "form-label"
-}, "Tipo (*)"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-  type: "text",
+}, "Tipo (*)"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
   name: "type",
-  "class": "form-control form-control-sm",
-  autocomplete: "new-text"
-}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("<select name=\"type\" class=\"form-control form-control-sm\">\r\n                                    <option disabled value=\"\" selected>- Seleccione un tipo -</option>\r\n                                    <option value=\"3\">Incubadora</option>\r\n                                    <option value=\"2\">Investigacion</option>\r\n                                    <option value=\"1\">General</option>\r\n                                </select>\r\n                                <p error=\"type\" class=\"error\"></p>")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "form-control form-control-sm"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  disabled: "",
+  value: "",
+  selected: ""
+}, "- Seleccione un tipo -"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  value: "3"
+}, "Incubadora"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  value: "2"
+}, "Investigacion"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  value: "1"
+}, "General")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  error: "type",
+  "class": "error"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("--> ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-12"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "form-label"
@@ -34923,7 +34934,7 @@ app.mount('#app'); // ==========================================================
 
 app.config.globalProperties.$name = 'Flask'; // * Uri a usar
 
-app.config.globalProperties.$uri = 'http://localhost:8000/api'; // app.config.globalProperties.$uri = 'https://unamba.com/api'
+app.config.globalProperties.$uri = 'http://localhost:8000/api'; //app.config.globalProperties.$uri = 'https://unamba.com/api'
 // =============================================================
 
 /***/ }),
