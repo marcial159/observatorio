@@ -14,8 +14,8 @@ class StudentController extends Controller
         $list = Student::select( 'id', 'person_id', 'code','asignament_id','created_at', 'updated_at' )
                            ->orderBy( $request->parameter ? $request->parameter : 'id', $request->order ? $request->order : 'desc' )
                            ->person_id( $request->person_id )
-                           ->code( $request->code )
-                           ->asignament_id( $request->asignament_id )
+                           //->code( $request->code )
+                           //->asignament_id( $request->asignament_id )
                            ->paginate( $request->rows ? $request->rows : 5 );
 
         return StudentResource::collection( $list );

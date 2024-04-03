@@ -81,6 +81,12 @@ Route::group(['middleware' => ['jwt.verify']], function()
     Route::put( 'investigation_student/{investigation_student}', 'App\Http\Controllers\InvestigationStudentController@update' )->middleware( 'can:investigation_student.update' );
     Route::delete( 'investigation_student/{investigation_student}', 'App\Http\Controllers\InvestigationStudentController@destroy' )->middleware( 'can:investigation_student.destroy' );
 
+    // rutas Estudiantes
+    Route::post( 'student/list', 'App\Http\Controllers\StudentController@list' )->middleware( 'can:student.list' );
+    Route::get( 'student/{student}', 'App\Http\Controllers\StudentController@show' )->middleware( 'can:student.list' );
+    Route::post( 'student', 'App\Http\Controllers\StudentController@store' )->middleware( 'can:student.store' );
+    Route::put( 'student/{student}', 'App\Http\Controllers\StudentController@update' )->middleware( 'can:student.update' );
+    Route::delete( 'student/{student}', 'App\Http\Controllers\StudentController@destroy' )->middleware( 'can:student.destroy' );
 
     /*Route::post( 'item/list', 'App\Http\Controllers\ItemController@list' )->middleware( 'can:item.list' );
     Route::get( 'item/{item}', 'App\Http\Controllers\ItemController@show' )->middleware( 'can:item.list' );
@@ -94,5 +100,55 @@ Route::group(['middleware' => ['jwt.verify']], function()
     Route::delete('item/{item}', 'App\Http\Controllers\ItemController@destroy');
     Route::put('item/{item}', 'App\Http\Controllers\ItemController@update');
     Route::get('item/{item}', 'App\Http\Controllers\ItemController@show');
+
+    //proyectos incubadora de empresas
+    Route::post('project/validate-data', 'App\Http\Controllers\ProjectController@validateData');
+    Route::post('project/resources', 'App\Http\Controllers\ProjectController@resources');
+    Route::post('project/list', 'App\Http\Controllers\ProjectController@list');
+    Route::get('project/{project}', 'App\Http\Controllers\ProjectController@show');
+    Route::post('project', 'App\Http\Controllers\ProjectController@store');
+    Route::put('project/{project}', 'App\Http\Controllers\ProjectController@update');
+    Route::delete('project/{project}', 'App\Http\Controllers\ProjectController@destroy');
+    Route::post('project/report-items', 'App\Http\Controllers\ProjectController@reportItems');
+
+
+    Route::post('project-file', 'App\Http\Controllers\ProjectFileController@store');
+    Route::post('project-file/list', 'App\Http\Controllers\ProjectFileController@list');
+    Route::delete('project-file/{file}', 'App\Http\Controllers\ProjectFileController@destroy');
+    Route::post('project-file/update/{projectFile}', 'App\Http\Controllers\ProjectFileController@update');
+    Route::get('project-file/{projectFile}', 'App\Http\Controllers\ProjectFileController@show');
+
+
+    Route::post('project-item/validate-data', 'App\Http\Controllers\ProjectItemController@validateData');
+    Route::post('project-item/resources', 'App\Http\Controllers\ProjectItemController@resources');
+    Route::post('project-item/list', 'App\Http\Controllers\ProjectItemController@list');
+    Route::post('project-item', 'App\Http\Controllers\ProjectItemController@store');
+    Route::delete('project-item/{projectItem}', 'App\Http\Controllers\ProjectItemController@destroy');
+    Route::put('project-item/{projectItem}', 'App\Http\Controllers\ProjectItemController@update');
+    Route::get('project-item/{projectItem}', 'App\Http\Controllers\ProjectItemController@show');
+
+    Route::post('concept/list', 'App\Http\Controllers\ConceptController@list');
+    Route::post('concept', 'App\Http\Controllers\ConceptController@store');
+    Route::delete('concept/{concept}', 'App\Http\Controllers\ConceptController@destroy');
+    Route::put('concept/{concept}', 'App\Http\Controllers\ConceptController@update');
+    Route::get('concept/{concept}', 'App\Http\Controllers\ConceptController@show');
+
+    Route::post('project-stage/list', 'App\Http\Controllers\ProjectStageController@list');
+    Route::post('project-stage', 'App\Http\Controllers\ProjectStageController@store');
+    Route::delete('project-stage/{projectStage}', 'App\Http\Controllers\ProjectStageController@destroy');
+    Route::put('project-stage/{projectStage}', 'App\Http\Controllers\ProjectStageController@update');
+    Route::get('project-stage/{projectStage}', 'App\Http\Controllers\ProjectStageController@show');
+
+    Route::post('project-category/list', 'App\Http\Controllers\ProjectCategoryController@list');
+    Route::post('project-category', 'App\Http\Controllers\ProjectCategoryController@store');
+    Route::delete('project-category/{projectCategory}', 'App\Http\Controllers\ProjectCategoryController@destroy');
+    Route::put('project-category/{projectCategory}', 'App\Http\Controllers\ProjectCategoryController@update');
+    Route::get('project-category/{projectCategory}', 'App\Http\Controllers\ProjectCategoryController@show');
+
+    Route::post('contest/list', 'App\Http\Controllers\ContestController@list');
+    Route::post('contest', 'App\Http\Controllers\ContestController@store');
+    Route::delete('contest/{contest}', 'App\Http\Controllers\ContestController@destroy');
+    Route::put('contest/{contest}', 'App\Http\Controllers\ContestController@update');
+    Route::get('contest/{contest}', 'App\Http\Controllers\ContestController@show');
 
 });

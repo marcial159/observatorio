@@ -15,6 +15,12 @@ import AdminLaboratories from '../components/admin/modules/laboratories/Index.vu
 import AdminAnnouncements from '../components/admin/modules/announcements/Index.vue'
 import AdminItems from '../components/admin/modules/items/Index.vue'
 import AdminInvestigationStudents from '../components/admin/modules/investigation_students/Index.vue'
+import AdminStudents from '../components/admin/modules/students/Index.vue'
+import AdminProjects from '../components/admin/modules/projects/Index.vue'
+import AdminFinances from '../components/admin/modules/finances/Index.vue'
+import AdminProjectStages from '../components/admin/modules/projectStages/Index.vue'
+import AdminProjectCategories from '../components/admin/modules/projectCategories/Index.vue'
+import AdminContests from '../components/admin/modules/contests/Index.vue'
 // Vista de errores
 import Error404 from '../components/errors/404.vue'
 
@@ -35,7 +41,13 @@ const router = createRouter({
         { path: '/admin/laboratories' ,component: AdminLaboratories, name: 'AdminLaboratories', meta: { requiresAuth: true } },
         { path: '/admin/announcements', component: AdminAnnouncements, name: 'AdminAnnouncements', meta: { requiresAuth: true } },
         { path: '/admin/items', component: AdminItems, name: 'AdminItems', meta: { requiresAuth: true } },
+        { path: '/admin/students' ,component: AdminStudents, name: 'AdminStudents', meta: { requiresAuth: true } },
         { path: '/admin/investigation_students', component: AdminInvestigationStudents, name: 'AdminInvestigationStudents', meta: { requiresAuth: true } },
+        { path: '/admin/projects', component: AdminProjects, name: 'AdminProjects', meta: { requiresAuth: true } },
+        { path: '/admin/projects/finances/:code', component: AdminFinances, name: 'AdminFinances', meta: { requiresAuth: true } },
+        { path: '/admin/project-stages', component: AdminProjectStages, name: 'AdminProjectStages', meta: { requiresAuth: true } },
+        { path: '/admin/project-categories', component: AdminProjectCategories, name: 'AdminProjectCategories', meta: { requiresAuth: true } },
+        { path: '/admin/contests', component: AdminContests, name: 'AdminContests', meta: { requiresAuth: true } },
         // Rutas para errores
         { path: "/:catchAll(.*)", component: Error404 , name: '404' },
     ]

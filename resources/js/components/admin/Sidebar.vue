@@ -98,8 +98,8 @@
                     </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" :class="(route == '/admin/user') ? 'active' : ''" :to="{name: 'AdminUsers'}" @click="activate">
-                        <i class="lni lni-graduation fs-6" :class="(route == '/admin/user') ? 'text-success' : ''"></i>
+                    <router-link class="nav-link" :class="(route == '/admin/student') ? 'active' : ''" :to="{name: 'AdminStudents'}" @click="activate">
+                        <i class="lni lni-graduation fs-6" :class="(route == '/admin/student') ? 'text-success' : ''"></i>
                         <span class="nav-link-text ms-1">Estudiantes</span>
                     </router-link>
                 </li>
@@ -123,15 +123,23 @@
                                     <span class="sidenav-normal"> Inv. Docente </span>
                                 </router-link>
                             </li>
-                            <li v-show="keys.includes('investigation_student.list')" class="nav-item" :class="(route == '/admin/investigation_students') ? 'active' : ''">
-                                <router-link class="nav-link" :to="{name: 'AdminInvestigationStudents'}" @click="activate">
+                            <li  class="nav-item" :class="(route == '/admin/projects') ? 'active' : ''">
+                                <router-link class="nav-link" :to="{name: 'AdminProjects'}" @click="activate">
                                     <span class="sidenav-mini-icon"><i class="fa fa-circle-o text-xxs" aria-hidden="true"></i></span>
                                     <span class="sidenav-normal"> Inv. Estudiante </span>
                                 </router-link>
                             </li>
+                            
                         </ul>
                     </div>
-                </li>               
+                </li>
+                <li class="nav-item" :class="(route == '/admin/projects') ? 'active' : ''">
+                                <router-link class="nav-link" :to="{ name: 'AdminProjects' }" @click="activate">
+                                    <span class="sidenav-mini-icon"><i class="fa fa-circle-o text-xxs"
+                                            aria-hidden="true"></i></span>
+                                    <span class="sidenav-normal"> Proyectos Incubadoras</span>
+                                </router-link>
+                            </li>               
             </ul>
             
         </div>
